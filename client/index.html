@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ToolkitTEST</title>
+    <link href="../css/index.css" rel="stylesheet" type="text/css">
+</head>
+<body onload = "inner()">
+    <div id="container">
+    <div class="shapes" id="rectangel">
+        <h4 id="width"></h4>
+        <h4 id="colorType"></h4>
+        <h4 id="sizeCM"></h4>
+        <h4 id="profil"></h4>
+        <h4 id="inDruk">0</h4>
+        <h4 id="inWycena">0</h4>
+    </div>
+    <div class='button'>
+        <label>
+        <input class="select" id ="druk" type="radio" onclick="mode('druk')" name="DRUK" checked>
+        <span class="druk">druk</span>
+        </label>
+        <label>
+        <input class="select" id ="wycena" type="radio" onclick="mode('wycena')" name="DRUK">
+        <span class="wycena">wycena</span>
+        </label>
+    </div>
+    <div class="conteainer2">
+        <div><input class = 'mode' id ='inputWidth' onkeyup="widthF()" onkeypress="return isNumberKey(event)"/>
+        <label for="inputWidth">width</label></div>
+        <div><input class = 'mode' id ='inputHeight' onkeyup="heightF()" onkeypress="return isNumberKey(event)"/>
+        <label for="inputHeight">height</label></div>
+        <div><input class = 'mode' id ='inputDPI' onkeyup="dpiF()" onkeypress="return isNumberKey(event)"/>
+        <label for="inputDPI">dpi</label></div>
+        <div><button class = 'mode' id="reSizeButton" onclick="resizeAply()" >apply</button></div>
+    </div>
+        <div class = "conteainer3">
+            <input class="mode" type="radio" value="standard" name="repetition" id="standard"/><label for="standard">standard</label>
+            <input class="mode" type="radio" value="none" name="repetition" id="none"/><label for="none">none</label>
+            <input class="mode" type="radio" value="halfdrop" name="repetition" id="halfdrop"/><label for="halfdrop">halfdrop</label>
+            <input class="mode" type="radio" value="mirrorall" name="repetition" id="mirrorall"/><label for="mirrorall">mirrorall</label>
+            <input class="mode" type="radio" value="brick" name="repetition" id="brick"/><label for="brick">brick</label>
+            <input class="mode" type="radio" value="mirrorbasic" name="repetition" id="mirrorbasic"/><label for="mirrorbasic">mirrorbasic</label>
+        </div>
+    <div id="conteainer4">
+    <button class='btn' id="kreton" onclick= "directory('kreton')">kreton</button>
+    <button class='btn' id="satyna" onclick= "directory('satyna')">satyna</button>
+    <button class='btn' id="woal" onclick= "directory('woal')">woal</button>
+    <button class='btn' id="sofia" onclick= "directory('sofia')">sofia</button>
+    <button class='btn' id="panama" onclick= "directory('panama')">panama</button>
+    <button class='btn' id="gabardyna" onclick= "directory('gabardyna')">gabardyna</button>
+    <button class='btn' id="jersey 180" onclick= "directory('jersey 180')">jersey 180</button>
+    <button class='btn' id="jersey 200" onclick= "directory('jersey 200')">jersey 200</button>
+    <button class='btn' id="jersey 230" onclick= "directory('jersey 230')">jersey 230</button>
+    <button class='btn' id="interlock" onclick= "directory('interlock')">interloc</button>
+    <button class='btn' id="pętelka 250" onclick= "directory('pętelka 250')">pętelka 250</button>
+    <button class='btn' id="pętelka 330" onclick= "directory('pętelka 330')">pętelka 330</button>
+    </div>
+    <div class="conteainer5">
+        <button class="copybtn" onclick="copyPath('copy')">c</button>
+        <p id="copy"></p>
+        <input class = 'check2' name = "saveAll" id ="saveAll" type='checkbox'/><label for="saveAll">save all</label>
+        <input class = 'check2' name = "closeF" id ="closeF" type='checkbox'/><label for="closeF">close file</label>
+        </div>
+    <div class="conteainer6">
+        <input class = 'check' name = "box" id ="box" type='checkbox'/><label for="box"></label>
+        <input class = 'form' id ='form' placeholder="enter new file name" disabled/>
+        <input class = 'check' name= "box2" id ="box2"type='checkbox'/><label for="box2"></label>
+        <input class = 'form' id ='form2' placeholder="enter subfolder name" disabled/>
+    </div>
+    <div class="conteainer7">
+
+    </div>
+</div>
+<!-- close the file
+    <div>
+        <input type="checkbox" id="closeFile" name="close file">
+        <label for="closeFile">close file</label>
+    </div> 
+-->
+<!-- copy path
+    <div><button onclick="copyElementText('toCopy')">copy path</button>
+        <h6 id="toCopy"></h6>
+    </div>
+-->
+    <script type="text/javascript" src="../js/CSInterface.js"></script>
+    <script type="text/javascript" src="../js/json2.js"></script>
+    <script type="text/javascript" src="../js/index.js"></script>
+    <script type="text/javascript" src="../js/index.jsx"></script>
+    <script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+</body>
+</html>
