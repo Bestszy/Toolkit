@@ -1,6 +1,7 @@
 /*Ideas:
 - Concept of wrap all inputs by array.from and just reference to the place in the array in functions.
-*/
+works
+*/ 
 // ***functions to enable and disable inputs in html***
 document.getElementById("box").onchange=function(){
   document.getElementById("form").disabled = !this.checked};
